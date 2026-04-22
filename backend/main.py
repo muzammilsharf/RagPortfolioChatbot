@@ -14,6 +14,9 @@ import os
 
 load_dotenv()
 
+import os
+
+port = int(os.environ.get("PORT", 8000))
 
 def create_app() -> FastAPI:
     app = FastAPI(title="Portfolio RAG Chatbot", version="1.0.0")
