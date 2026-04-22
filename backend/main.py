@@ -14,8 +14,6 @@ import os
 
 load_dotenv()
 
-import os
-
 port = int(os.environ.get("PORT", 8000))
 
 def create_app() -> FastAPI:
