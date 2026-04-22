@@ -1,0 +1,26 @@
+# Environment
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Frontend build
+dist/
+build/
+
+# RAG / AI data
+vectorstore/
+chroma_db/
+faiss_index/
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
