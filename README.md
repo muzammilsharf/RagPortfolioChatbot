@@ -23,5 +23,43 @@ A professional, production-ready Retrieval-Augmented Generation (RAG) system des
 The system utilizes a microservices-oriented architecture to achieve low latency and zero-cost scalability.
 
 1.  **Ingestion Phase**: PDFs are parsed and split into 250-token semantic chunks with overlap to maintain context.
-2.  **Retrieval Phase**: User queries are vectorized and a Top-K similarity search is performed against the vector store.
+2.  **Retrieval Phase**: User queries are vectorized, and a Top-K similarity search is performed against the vector store.
 3.  **Generation Phase**: Retrieved context is compiled into a prompt and sent to Groq or Gemini for real-time streaming back to the Portfolio UI.
+
+## Hallucination Control
+* Strict context-based prompting
+* Low temperature generation
+* Retrieval-first architecture (no context = no answer)
+
+## Rate Limiting & Stability
+* IP-based rate limiting using `slowapi`
+* Request throttling for API protection
+* Graceful error handling for LLM failures
+
+## Observability (Planned / Partial)
+* Logging of full RAG pipeline (query → retrieval → generation)
+* Latency tracking per stage
+* Error monitoring for empty retrievals
+
+## Future Improvements
+
+* CI/CD pipeline for automated deployment  
+* Authentication system for personalized sessions  
+* Long-term memory using vector user history  
+* Hybrid retrieval (BM25 + semantic search)  
+* Analytics dashboard (user queries, engagement tracking)  
+* Multi-agent architecture (retriever + reasoning + formatter)
+* Voice integration
+* Deployment and Integration in the existing website.
+
+## Why This Project Matters
+
+This project demonstrates:
+* Production-grade RAG system design  
+* Real-world LLM integration (Groq + Gemini)  
+* Low-latency streaming architecture  
+* Full-stack AI engineering (frontend + backend + AI pipeline)  
+* Practical understanding of embeddings, vector databases, and retrieval systems.
+
+### LinkedIn: https://www.linkedin.com/in/m-muzammil-/
+### Email: sharfmuzamil@gmail.com
