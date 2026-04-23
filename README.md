@@ -84,7 +84,7 @@ To ensure the bot remains professional and accurate:
 ### Local Installation
 1. **Clone the Repo**
    ```bash
-   git clone [https://github.com/your-username/portfolio-rag.git](https://github.com/your-username/portfolio-rag.git)
+   git clone [(https://github.com/muzammilsharf/RagPortfolioChatbot.git)]
    cd portfolio-rag
 
    cd backend
